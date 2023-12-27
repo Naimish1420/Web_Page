@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity</title>
+    <style>
+        /* The Specificity Of This Is 1 */
+        h1{
+            color: aqua;
+        }
+        /* The Specificity Of This Is 100 */
+        /* #blue{
+            color: blue;
+        } */
+        /* The Specificity Of This Is  1 + 10 = 11 */
+        h1.yello{
+            color: rgb(189, 140, 238) ;
+        } /* The Specificity Of This Is 10 */
+        .pur{
+            color: rgb(88, 74, 214) !important;
+        } /* The Specificity Of This Is 10 */
+        [data-x = a]{
+         color: maroon;
+        }
+        /* The Specificity Of This Is 10 */
+        .red{
+            color: rgb(236, 34, 34); 
+        } 
+    </style>
+</head>
+<body>
+    <div>
+         <!-- The Specificity Of This Is 100  -->
+        <h1 id="blue" class="yello red pur" data-x="a">Css Specificity</h1>
+    </div>
+</body>
+</html>

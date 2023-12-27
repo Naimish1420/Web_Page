@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css More On Css Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: aqua;
+        } */
+        /* .box::first-line{
+            color: rgb(212, 63, 33);
+        } */
+        /* .boxes * {
+            color: rgb(21, 154, 154);
+            border: 2px solid black;
+        }
+       p,.box,a,[data-color = "primary"]{
+            margin-top: 40px;
+            padding: 20px; */
+        /* } */
+        /* .box:nth-child(even){
+            background-color: blue;
+        } */
+        /* .box:nth-last-child(3){
+            background-color: red;
+        } */
+        .boxes::before{
+            content: "I am good";
+            color: aquamarine;
+        }
+        .boxes::after{
+            content: "I am good";
+            color: bisque;
+        }
+        .boxes::selection{
+            color: rgb(92, 184, 184);
+        }
+        .box::first-letter{
+            color: purple;
+            font-size: 45px;
+        }
+        input::placeholder{
+            color: rgb(89, 89, 165);
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary"  class="box">I am A First Box Hello Buddy,</div>
+        <div class="box">Hey I am A bOX</div>
+        <div class="box">Hey I am A bOX</div>
+        <input type="text" placeholder="Enter A Name ">
+    </div>
+</body>
+</html>

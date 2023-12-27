@@ -1,0 +1,16 @@
+p{  display: inline-block;
+    background-color: rgb(170, 228, 208);
+}
+a{
+    background-color: rgb(216, 228, 239);
+}
+div{
+    background-color: rgb(145, 199, 213);
+}
+span{
+    display: block;
+    background-color: beige;
+}
+#user{
+    background-color: bisque;
+}

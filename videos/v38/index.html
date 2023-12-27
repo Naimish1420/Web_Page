@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid blue;
+            display: flex;
+            height: 80vh;
+            /* Justify Content in Alwasy In Flex Direction and after see maain Axix */
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* align-content: center; */
+            flex-flow: row wrap;
+            gap: 30px;
+
+        }
+        .iteam{
+            height: 30px;
+            width: 50px;
+            background-color: rgb(160, 110, 163);
+            border: 2px solid red;
+            /* margin: 10px; */
+            /* flex-grow: 1; */
+        }
+        .order-1{
+            order: 1;
+        } 
+        .order-2{
+            order: 2;
+        } 
+        .order-3{
+            order: 3;
+        } 
+        .it2{
+            /* flex-grow: 123654; */
+            /* flex-shrink: 2; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="iteam it2">1</div>
+            <div class="iteam">2</div>
+            <div class="iteam">3</div>
+            <div class="iteam order-1">4</div>
+            <div class="iteam">5</div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid </title>
+    <style>
+        .container{
+            width: 80vw;
+            border: 2px solid rgb(10, 10, 9);
+            display: grid;
+           grid-template-areas: "nav nav nav"
+                                "side artical artical"
+                                "footer footer footer";
+        }
+        .iteam{
+            border: 2px solid red;
+            height: 55px;
+            /* width: 55px; */
+        }
+        .iteam-1{
+            grid-area: nav;
+            background-color: aqua;
+        }
+
+        .iteam-2{
+            grid-area: side;
+            background-color: aquamarine;
+        }
+        .iteam-3{
+            grid-area: artical;
+            background-color: cadetblue;
+        }
+        .iteam-4{
+            grid-area: footer;
+            background-color: chocolate
+        }
+        .iteam-5{
+            background-color: blue;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="iteam iteam-1">1</div>
+        <div class="iteam iteam-2">2</div>
+        <div class="iteam iteam-3">3</div>
+        <div class="iteam iteam-4">4</div>
+        <div class="iteam iteam-5">5</div>
+    </div>
+</body>
+</html>

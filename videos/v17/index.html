@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Use </title>
+    <style>
+        /* Element Selector */
+        .violet{
+            background-color: rgb(139, 171, 199);
+        }
+        #green{
+            background-color: beige;
+        }
+        /* Child Selector */
+      
+        /* decedent selector */
+        div p{
+            background-color: rgb(190, 107, 107);
+            color: black;
+        }
+        /* universal Selectro */
+        *{
+            padding: 1;
+            margin: 1;
+        }
+        /* pseudo selector */
+        a:visited
+        {
+            color: yellowgreen;
+        }
+        a:link{
+            color: green ;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <main class="one">
+
+        <p>I AM fIRST</p>
+        <p>I AM SECOND</p>
+
+    </main>
+    <div class="violet">
+        I am A Div
+        <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, tempore?</p>
+    </article>
+
+    </div>
+    <div id="green">
+        I am Also A Div
+    </div>
+    <a href="https://www.flipkart.com/boult-audio-w20-zen-enc-mic-32h-battery-life-low-latency-gaming-made-india-5-3v-bluetooth-headset/p/itm4255cf81a0d8d?pid=ACCGRNFM5GBPUKPF&lid=LSTACCGRNFM5GBPUKPFYSZIXK&marketplace=FLIPKART&q=boult%20audio%20w%2020&sattr[]=color&st=color">flipkart Boult Audio W 20</a>
+    <div></div>
+  
+    
+</body>
+</html>

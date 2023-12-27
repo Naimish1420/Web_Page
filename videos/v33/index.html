@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersize 4</title>
+    <style>
+        :root{
+            --firstcolor:rgb(148, 148, 208);
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            background-color: aquamarine;
+            justify-content: center;
+        }
+        @media screen and (max-width:455px) {
+            .ul1{
+                background-color: var(--firstcolor);
+                flex-direction: column;
+            }
+        }
+     
+        ul li{
+            padding: 4px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<nav class="container">
+    <ul class="ul1">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+<body>
+    
+</body>
+</html>
